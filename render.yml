@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: queen-anju-md
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node queen.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
